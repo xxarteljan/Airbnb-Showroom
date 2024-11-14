@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header>
+        <h1>Detajet e Apartamentit</h1>
+    </header>
+
+    <section class="property-details">
+        <h2 id="property-title">Arkle 4</h2>
+        <img class="property-image" src= "C:\Users\User\Desktop\Apartaments\ca0ff491-9ded-448f-ac3c-24d74e71d603.jpeg"  alt="Property Image" id="main-image-1">
+        
+        <div class="thumbnail-container">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\016488e8-1e3b-4e58-819a-76a877271521.jpeg" alt="Thumbnail 1" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\ca0ff491-9ded-448f-ac3c-24d74e71d603.jpeg" alt="Thumbnail 2" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\5cfba2a4-9c17-4b03-84af-742ab83e5c5b.jpeg" alt="Thumbnail 3" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\1b82df36-cc06-47fc-855b-60402f3e3bbe.jpeg" alt="Thumbnail 4" onclick="changeImage(this.src, 'main-image-1')">
+        </div>
+        
+        <p id="property-description"><strong>Pershkrimi</strong>: 1 dhome, 1 tualet, ballkon, Netflix.</p>
+        <p id="property-contact"><strong>Contact:</strong> Numri i telefonit: +355 69 577 7199.</p>
+        
+        <button onclick="goBack()">Go Back</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Property Showroom</p>
+    </footer>
+
+    <script>
+        function changeImage(src, imageId) {
+            document.getElementById(imageId).src = src; // Change the main image to the clicked thumbnail
+        }
+
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>

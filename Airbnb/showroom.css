@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #4b3c3c; /* Dark brown text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d4c5b2; /* Light brown background for header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.property-details {
+    max-width: 800px; /* Maximum width for content */
+    margin: 20px auto; /* Center the content */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+}
+
+.property-image {
+    width: 100%; /* Full width for main image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.thumbnail-container {
+    display: flex;
+    margin-top: 10px; /* Space above thumbnails */
+    justify-content: center; /* Center thumbnails */
+}
+
+.thumbnail {
+    width: 80px; /* Thumbnail width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between thumbnails */
+    cursor: pointer; /* Pointer cursor on hover */
+    opacity: 0.8; /* Slightly transparent */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+    border-radius: 5px; /* Rounded corners for thumbnails */
+}
+
+.thumbnail:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0; /* Remove top margin */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger text for paragraphs */
+    line-height: 1.5; /* Spacing between lines */
+}
+
+button {
+    background-color: #d4c5b2; /* Button color */
+    border: none; /* No border */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Font size */
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #b0a28e; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4c5b2; /* Same color as header */
+    color: #fff; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width for footer */
+}

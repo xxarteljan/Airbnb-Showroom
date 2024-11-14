@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header>
+        <h1>Detajet e Apartamentit</h1>
+    </header>
+
+    <section class="property-details">
+        <h2 id="property-title">Arkle 2</h2>
+        <img class="property-image" src= "C:\Users\User\Desktop\Apartaments\PHOTO-2024-10-28-12-00-14 (2).jpg"  alt="Property Image" id="main-image-1">
+        
+        <div class="thumbnail-container">
+           
+            
+        </div>
+        
+        <p id="property-description"><strong>Pershkrimi</strong>: 1 dhome, 1 tualet, ballkon, Netflix.</p>
+        <p id="property-contact"><strong>Contact:</strong> Numri i telefonit: +355 69 577 7199.</p>
+        
+        <button onclick="goBack()">Go Back</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Property Showroom</p>
+    </footer>
+
+    <script>
+        function changeImage(src, imageId) {
+            document.getElementById(imageId).src = src; // Change the main image to the clicked thumbnail
+        }
+
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>

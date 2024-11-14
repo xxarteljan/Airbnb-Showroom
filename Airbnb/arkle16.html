@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header>
+        <h1>Detajet e Apartamentit</h1>
+    </header>
+
+    <section class="property-details">
+        <h2 id="property-title">Arkle 3</h2>
+        <img class="property-image" src="C:\Users\User\Desktop\Apartaments\f79eee7d-10bb-4f3a-9a12-7b01f32e82fc.jpeg" alt="Property Image" id="main-image-1">
+        
+        <div class="thumbnail-container">
+          
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\e37b4833-34df-45b3-8124-7656cb3203a0.jpeg" alt="Thumbnail 2" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\ae9bc226-b323-47eb-b283-f452bb95e834.jpeg" alt="Thumbnail 1" onclick="changeImage(this.src, 'main-image-1')">
+            <img class="thumbnail" src= "C:\Users\User\Desktop\Apartaments\0f2215c2-6147-4360-81cd-5ba5b4483020.jpeg"  alt="Thumbnail 1" onclick="changeImage(this.src, 'main-image-1')">
+        </div>
+        
+        <p id="property-description"><strong>Pershkrimi</strong>: Studio , Netflix</p>
+        <p id="property-contact"><strong>Contact:</strong> Numri i telefonit: +355 69 577 7199.</p>
+        
+        <button onclick="goBack()">Go Back</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Property Showroom</p>
+    </footer>
+
+    <script>
+        function changeImage(src, imageId) {
+            document.getElementById(imageId).src = src; // Change the main image to the clicked thumbnail
+        }
+
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>
